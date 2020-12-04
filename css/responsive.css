@@ -1,0 +1,136 @@
+/*================================================
+                  BOOTSTRAP 3 MEDIA QUERIES
+==================================================*/
+
+/*Large devices (desktops and laptops)*/
+@media(min-width: 1200px) {
+    /* Everything is okay*/
+}
+
+/*Medium devices (landscape tablets & medium desktops)*/
+@media(min-width: 992px) and (max-width: 1199px) {
+
+    /*mobile menu*/
+    .navbar {
+        background: rgba(0, 0, 0, .7);
+        padding: 0;
+    }
+
+    .navbar-nav {
+        float: left;
+    }
+
+    .vesco-nav-wrapper {
+        padding: 0;
+    }
+}
+
+/*Small devices (portrait tablets & small desktops)*/
+@media(min-width: 768px) and (max-width: 991px) {
+
+    /*mobile menu*/
+    .navbar {
+        background: rgba(0, 0, 0, .7);
+        padding: 0;
+    }
+
+    .navbar-nav {
+        float: left;
+    }
+
+    .vesco-nav-wrapper {
+        padding: 0;
+    }
+
+    /*About- remove diagonal border and align text properly*/
+    #about-bg-diagonal {
+        border-left: 0;
+        border-top: 0;
+        width: 100%;
+        height: 350px;
+    }
+
+    #about-content-box {
+        width: 100%;
+        height: 350px;
+    }
+
+    /*Stats items*/
+    #stats-item {
+        padding: 20px 0;
+    }
+
+    /*Footer*/
+    #footer-copyrights{
+        text-align: center;
+    }
+}
+
+/*Extra-Small devices (portrait tablets & landscape phones)*/
+@media(max-width: 767px) {
+    /*mobile menu*/
+    .navbar {
+        background: rgba(0, 0, 0, .7);
+        padding: 0;
+    }
+
+    .navbar-nav {
+        float: left;
+    }
+
+    .vesco-nav-wrapper {
+        padding: 0;
+    }
+    /*Home*/
+    #home-heading h3{
+        font-size: 24px;
+    }
+    /*buttons*/
+    .btn-general{
+        padding: 6px 22px 6px 22px;
+        font-size: 14px;
+    }
+    /*About- remove diagonal border and align text properly*/
+    #about-bg-diagonal {
+        border-left: 0;
+        border-top: 0;
+        width: 100%;
+        height: 350px;
+    }
+
+    #about-content-box {
+        width: 100%;
+        height: 350px;
+    }
+    /*Work*/
+    .img-wrapper img{
+        min-width: 100%;
+    }
+    /*Testimonials*/
+    .testimonial blockquote{
+        padding: 6px 50px;
+    }
+    .testimonial blockquote:before{
+        left: 10px;
+    }
+    .testimonial blockquote:after{
+        right: 10px;
+    }
+    .testimonial blockquote p{
+        font-size: 14px;
+    }
+     /*Stats items*/
+     #stats-item {
+        padding: 20px 0;
+    }
+    /*Footer*/
+    #footer-copyrights{
+        text-align: center;
+    }
+}
+
+/*Extra-Small devices (smaller devices)*/
+@media(max-width: 480px) {}
+
+/*Extra-Small devices (smaller devices)*/
+@media(max-width: 320px) {}

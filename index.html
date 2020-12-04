@@ -37,19 +37,23 @@
     <!-- style CSS -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- responsive CSS-->
+    <link rel="stylesheet" href="css/responsive.css">
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar-fixed-top" data-offset="65">
 
     <header>
-        <nav class="navbar navbar-expand-lg vesco-top-nav fixed-top d-inline" role="navigation">
+        <nav class="navbar navbar-fixed-top" role="navigation">
             <div class="container-fluid">
-                <!--<div class="vesco-nav-wrapper">-->
+                <div class="vesco-nav-wrapper">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#vesco-menu"
-                            aria-controls="vesco-menu" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#vesco-menu">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
                         </button>
 
                         <a class="navbar-brand" href="#home">
@@ -58,20 +62,20 @@
                     </div>
 
                     <div class="collapse navbar-collapse" id="vesco-menu">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="nav-item active"><a class="nav-link" href="#home">Home</a></li>
-                            <li class="nav-item active"><a class="nav-link" href="#services">Services</a></li>
-                            <li class="nav-item active"><a class="nav-link" href="#about">About</a></li>
-                            <li class="nav-item active"><a class="nav-link" href="#work">Work</a></li>
-                            <li class="nav-item active"><a class="nav-link" href="#team">Team</a></li>
-                            <li class="nav-item active"><a class="nav-link" href="#testimonials">Testimonials</a></li>
-                            <li class="nav-item active"><a class="nav-link" href="#pricing">Pricing</a></li>
-                            <li class="nav-item active"><a class="nav-link" href="#stats">Statistics</a></li>
-                            <li class="nav-item active"><a class="nav-link" href="#clients">Clients</a></li>
-                            <li class="nav-item active"><a class="nav-link" href="#contacts">Contacts</a></li>
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a class="nav-link" href="#home">Home</a></li>
+                            <li class="active"><a class="nav-link" href="#services">Services</a></li>
+                            <li class="active"><a class="nav-link" href="#about">About</a></li>
+                            <li class="active"><a class="nav-link" href="#work">Work</a></li>
+                            <li class="active"><a class="nav-link" href="#team">Team</a></li>
+                            <li class="active"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                            <li class="active"><a class="nav-link" href="#pricing">Pricing</a></li>
+                            <li class="active"><a class="nav-link" href="#stats">Statistics</a></li>
+                            <li class="active"><a class="nav-link" href="#clients">Clients</a></li>
+                            <li class="active"><a class="nav-link" href="#contacts">Contacts</a></li>
                         </ul>
                     </div>
-                <!--</div>-->
+                </div>
             </div>
         </nav>
     </header>
@@ -90,7 +94,7 @@
                     </div>
 
                     <div id="home-btn" class="animate__animated animate__zoomIn">
-                        <a class="btn btn-lg btn-general btn-white" href="#work" role="button"
+                        <a class="btn btn-lg btn-general btn-white nav-link " href="#work" role="button"
                             title="View Our Work">View Our Work</a>
                     </div>
 
@@ -113,7 +117,7 @@
 
                 <div class="row wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="service-item">
                             <div class="service-item-icon">
                                 <i class="fa fa-paint-brush fa-3x"></i>
@@ -127,7 +131,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="service-item">
                             <div class="service-item-icon">
                                 <i class="fa fa-laptop fa-3x"></i>
@@ -141,7 +145,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="service-item">
                             <div class="service-item-icon">
                                 <i class="fa fa-tablet fa-3x"></i>
@@ -155,7 +159,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="service-item">
                             <div class="service-item-icon">
                                 <i class="fa fa-search fa-3x"></i>
@@ -169,7 +173,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="service-item">
                             <div class="service-item-icon">
                                 <i class="fa fa-pencil-square-o fa-3x"></i>
@@ -183,7 +187,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-6">
                         <div class="service-item">
                             <div class="service-item-icon">
                                 <i class="fa fa-life-ring fa-3x"></i>
@@ -212,7 +216,7 @@
         <div class="container">
 
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-4">
                     <div id="about-content-box">
                         <div id="about-content-box-outer">
                             <div id="about-content-box-inner">
@@ -232,7 +236,8 @@
 
                                 <div id="about-btn" class="wow animate__animated animate__fadeInUp"
                                     data-wow-duration="1s" data-wow-delay=".5s">
-                                    <a class="btn btn-lg btn-general btn-blue" href="#work" role="button"> Our Work </a>
+                                    <a class="btn btn-lg btn-general btn-blue nav-link" href="#work" role="button"> Our
+                                        Work </a>
                                 </div>
                             </div>
                         </div>
@@ -254,7 +259,7 @@
                 <div class="container-fluid">
                     <div class="row no-gutters wow animate__animated animate__fadeInUp" data-wow-duration="1s"
                         data-wow-delay=".5s">
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-4">
                             <div class="img-wrapper">
                                 <a href="img/work/1.jpg" title="Work Description Goes Here">
                                     <img src="img/work/1.jpg" class="img-responsive" alt="Work">
@@ -262,7 +267,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-4">
                             <div class="img-wrapper">
                                 <a href="img/work/2.jpg" title="Work Description Goes Here">
                                     <img src="img/work/2.jpg" class="img-responsive" alt="Work">
@@ -270,7 +275,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-4">
                             <div class="img-wrapper">
                                 <a href="img/work/3.jpg" title="Work Description Goes Here">
                                     <img src="img/work/3.jpg" class="img-responsive" alt="Work">
@@ -278,7 +283,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-4">
                             <div class="img-wrapper">
                                 <a href="img/work/4.jpg" title="Work Description Goes Here">
                                     <img src="img/work/4.jpg" class="img-responsive" alt="Work">
@@ -286,7 +291,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-4">
                             <div class="img-wrapper">
                                 <a href="img/work/5.jpg" title="Work Description Goes Here">
                                     <img src="img/work/5.jpg" class="img-responsive" alt="Work">
@@ -294,7 +299,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-4">
                             <div class="img-wrapper">
                                 <a href="img/work/6.jpg" title="Work Description Goes Here">
                                     <img src="img/work/6.jpg" class="img-responsive" alt="Work">
@@ -302,7 +307,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-4">
                             <div class="img-wrapper">
                                 <a href="img/work/7.jpg" title="Work Description Goes Here">
                                     <img src="img/work/7.jpg" class="img-responsive" alt="Work">
@@ -310,7 +315,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-3">
+                        <div class="col-md-3 col-sm-4">
                             <div class="img-wrapper">
                                 <a href="img/work/8.jpg" title="Work Description Goes Here">
                                     <img src="img/work/8.jpg" class="img-responsive" alt="Work">
@@ -439,7 +444,7 @@
                         <div class="col-md-12">
                             <div id="customers-testimonials" class="text-center owl-carousel owl-theme">
                                 <div class="testimonial">
-                                    <img src="img/client/client-1.jpg" class="img-responsive rounded-circle"
+                                    <img src="img/client/client-1.jpg" class="img-responsive img-circle"
                                         alt="testimonial">
                                     <blockquote class="text-center">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -456,7 +461,7 @@
                                 </div>
 
                                 <div class="testimonial">
-                                    <img src="img/client/client-2.jpg" class="img-responsive rounded-circle"
+                                    <img src="img/client/client-2.jpg" class="img-responsive img-circle"
                                         alt="testimonial">
                                     <blockquote>
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -473,7 +478,7 @@
                                 </div>
 
                                 <div class="testimonial">
-                                    <img src="img/client/client-3.jpg" class="img-responsive rounded-circle"
+                                    <img src="img/client/client-3.jpg" class="img-responsive img-circle"
                                         alt="testimonial">
                                     <blockquote class="text-center">
                                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -603,8 +608,8 @@
 
                 <div class="container">
                     <div class="row text-center wow animate__animated animate__bounceInLeft" data-wow-duration="1s"
-                        data-wow-delay=".5s"">
-                            <div class=" col-md-3">
+                        data-wow-delay=".5s">
+                            <div class="col-md-3 col-sm-6">
                         <div class="stats-item">
                             <i class="fa fa-cloud-download fa-5x"></i>
                             <h2><span class="counter">1590</span><span>+</span></h2>
@@ -612,7 +617,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="stats-item">
                             <i class="fa fa-star-o fa-5x"></i>
                             <h2><span class="counter">3500</span><span>+</span></h2>
@@ -620,7 +625,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="stats-item">
                             <i class="fa fa-heart-o fa-5x"></i>
                             <h2><span class="counter">1199</span><span>+</span></h2>
@@ -628,7 +633,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-sm-6">
                         <div class="stats-item">
                             <i class="fa fa-check fa-5x"></i>
                             <h2><span class="counter">2200</span><span>+</span></h2>
@@ -751,22 +756,25 @@
                             <p>Copyrights &copy; 2017 All Rights Reserved by Vesco Inc</p>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 hidden-sm hidden-xs">
                         <div id="footer-menu">
                             <ul>
-                                <li><a href="#home">Home</a>/</li>
-                                <li><a href="#services">Services</a>/</li>
-                                <li><a href="#work">Work</a>/</li>
-                                <li><a href="#team">Team</a>/</li>
-                                <li><a href="#testimonials">Testimonials</a>/</li>
-                                <li><a href="#pricing">Pricing</a>/</li>
-                                <li><a href="#stats">Statistics</a></li>
+                                <li><a class="nav-link" href="#home">Home</a>/</li>
+                                <li><a class="nav-link" href="#services">Services</a>/</li>
+                                <li><a class="nav-link" href="#work">Work</a>/</li>
+                                <li><a class="nav-link" href="#team">Team</a>/</li>
+                                <li><a class="nav-link" href="#testimonials">Testimonials</a>/</li>
+                                <li><a class="nav-link" href="#pricing">Pricing</a>/</li>
+                                <li><a class="nav-link" href="#stats">Statistics</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <a href="#home" id="back-to-top" class="btn btn-sm btn-blue btn-back-to-top nav-link"><i
+                class="fa fa-angle-up"></i></a>
     </footer>
 
 
@@ -788,6 +796,9 @@
     <!-- counter JS-->
     <script src="js/counter/jquery.waypoints.min.js"></script>
     <script src="js/counter/jquery.counterup.min.js"></script>
+
+    <!-- easing JS -->
+    <script src="js/easing/jquery.easing.1.3.js"></script>
 
     <!-- custom JS-->
     <script src="js/custom.js"></script>
